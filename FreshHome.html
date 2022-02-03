@@ -21,7 +21,10 @@
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <style>
-      ul {
+      
+ul {
+  display: table-row;
+  display: inline;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -33,12 +36,12 @@
 }
 
 li {
-  float: inline-start;
+    float: left;
 }
 
 li a {
   display: block;
-  color: crim;
+  color: crimson;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -52,15 +55,40 @@ html {
         scroll-behavior: smooth;
         image-resolution: 300dpi;
         }   
+
+.menu-image {
+    width: 100%;
+    height: auto;
+    /* Magic! */
+    max-width: 15vw;
+    max-height: 5vw;
+  }
+
+.menu-logo {
+    width: 100%;
+    height: auto;
+    max-width: 2vw;
+    max-height: 2vw;
+  }
+
+.menu-container {
+    display: table;
+}
   </style>
 </head>
 
 <body>
     <ul>
-        <li><a class="active" href="#ourstory">Our Story</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#mint">Mint</a></li>
+        <div class=menu-container>
+            <li><a class="active" href="#ourstory"><img src="image/HEADER_S.jpg" alt="Our Story" class=menu-image></a></li>
+            <li><a href="#roadmap"><img src="image/HEADER_M.jpg" alt="Roadmap" class=menu-image></a></li>
+            <li><a href="#aboutus"><img src="image/HEADER_T.jpg" alt="About Us" class=menu-image></a></li>
+            <li><a href="#family"><img src="image/HEADER_F.jpg" alt="Family" class=menu-image></a></li>
+            <li><a href="#mint"><img src="image/HEADER_MT.jpg" alt="Mint" class=menu-image></a></li>
+            <li><a href="#twitter"><img src="image/TwitLogo.png" alt="Twitter" class=menu-logo></a></li>
+            <li><a href="#discord"><img src="image/DiscordLogo.svg" alt="Family" class=menu-logo></a></li>
+            <li><a href="#OS"><img src="image/OSLogo.png" alt="Mint" class=menu-logo></a></li>
+        </div>
     </ul>      
 
   <script src="js/scripts.js"></script>
