@@ -24,12 +24,16 @@
 
 table {border: none;
   margin-left: auto;
-  margin-right: auto;}
+  margin-right: auto;
+  table-layout: fixed ;
+  width: 100%;}
 
 td {padding-left: 25px;
   padding-right: 25px;
-  align-items: center;
-}
+  text-align: center;
+  padding: 30px 0px;
+  width: 16.66%;}
+
 td p{margin: 0;
     color: maroon;
     font-size: 15px;
@@ -115,7 +119,7 @@ html {
 }
 
 #table{ 
-    display: table; 
+    display: table;
 }
 .tr{ 
     display: table-row; 
@@ -127,6 +131,14 @@ html {
     width: 100%;
     height: auto;
     max-width: 100vw;}
+
+.midimg{
+    width: 75%;
+    height: auto;
+    max-width: 75vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
   </style>
 </head>
 
@@ -136,7 +148,7 @@ html {
         <div class="tr">
             <div class="td"><li><a class="active" href="#ourstory"><img src="image/HEADER_S.jpg" alt="Our Story" class=menu-image /></a></li></div>
             <div class="td"><li><a href="#roadmap"><img src="image/HEADER_M.jpg" alt="Roadmap" class=menu-image /></a></li></div>
-            <div class="td"><li><a href="#aboutus"><img src="image/HEADER_T.jpg" alt="About Us" class=menu-image /></a></li></div>
+            <div class="td"><li><a href="#team"><img src="image/HEADER_T.jpg" alt="About Us" class=menu-image /></a></li></div>
             <div class="td"><li><a href="#family"><img src="image/HEADER_F.jpg" alt="Family" class=menu-image /></a></li></div>
             <div class="td"><li><a href="#mint"><img src="image/HEADER_MT.jpg" alt="Mint" class=menu-image /></a></li></div>
             <div class="td"><li><a href="https://twitter.com/AnimeVerse_OW"><img src="image/TwitLogo.png" alt="Twitter" class=menu-logo /></a></li></div>
@@ -150,32 +162,28 @@ html {
   <div class="container4" id="mint" style="padding-bottom: 20px;">
     <p>Minting coming soon!!!</p>
   </div>
-  <img src="image/Roadmap.jpg" alt="Roadmap" id="roadmap" class="bigimg" />
+  <img src="image/Roadmap.jpg" alt="Roadmap" id="roadmap" class="midimg" />
   <!-- Add in boxes for spaceing/structure here with the texts-->
-  <div class="container5" id="ourstory">
-    <p style="padding-bottom: 20px; font-size: 200%;">Welcome to AnimeVerse of Woman</p>
-    <p style="padding-bottom: 40px;">AnimeVerse of Women is a generative collection of 10,000 female avatars inspired by anime, manga, and pop culture. Every woman in this collection is completely unique and algorithmically generated from a repository of over 200 distinct traits. 
-    These portraits depict intelligent, confident, independent, powerful, and inspiring women.
-    Half of all proceeds will support UNICEF, a globally regarded nonprofit devoted to advancing women’s equality as one of its core focuses.
-    The AVoW collection depicts women, to benefit women, and is created by a family team of two sisters from the Netherlands: Lynn and Jane, and their single father, the regarded artist Kenneth Liu.
-    These pieces were created with thoughtful consideration of anime inspired elements. With each hand-drawn element and trait, the family artists aim to shine a spotlight on empowerment to showcase a new metaworld rooted in inclusivity and equality.</p>
-      
+  <div class="container5" id="ourstory"> 
+    
     <p style="padding-bottom: 20px; font-size: 200%;">The Story</p>
     <p style="padding-bottom: 40px;">Lynn and Jane are like a lot of teen girls their age: they are doing their best at school, they love listening to music, and they spend time connecting with friends and family on social media.
     Lynn expresses her artistic talents with a deep devotion to calligraphy, while Jane is a highly talented visual artist who excels in soft pencil sketching. Both young ladies are also devoted anime and manga enthusiasts, just like their father.
     a parent, Kenneth felt it was his responsibility to directly enable access for his daughters to contribute and build a better world, one where they are empowered to make their own free choices.
     As Kenneth watched his daughters grow up and mature, there was sincere concern about the world they were entering. The world just did not seem as safe as his own late 20th century childhood. It is certainly not as innocent and equitable as most socially conscious parents would like it to be.
     True gender equality, where men and women have equal power and identical opportunities for financial independence, education, and personal development should be basic universal rights. The new world opened by NFTs and crypto philanthropy is one where girls can grow up and become women who are recognized and respected for who they are, for what they have already accomplished, for their commitment to their aspirations and future endeavours, and to feel empowered to speak out on the issues for which they have strong convictions.</p>
+    <img src="image/Fam2.jpg" alt="Family2" class="bigimg" />
+    <img src="image/Fam3.jpg" alt="Family3" class="bigimg" />
   </div>
       <table>
         <thead>
           <tr>
-            <td><img src="image/Ken.jpg" alt="Ken" id="team" class="bio-img" /><p>Ken's bio goes here. He seems like an Awesome person!</p></td>
-            <td><img src="image/D1.jpg" alt="D1" class="bio-img" /><p>Lynn's bio goes here. She's one of the co-artists and co-creators!</p></td>
-            <td><img src="image/D2.jpg" alt="D2" class="bio-img" /><p>Jane's bio goes here. She's one of the co-artists and co-creators!</p></td>
-            <td><img src="image/GK.jpg" alt="GK" class="bio-img" /><p>Liz's bio goes here. She's into food blogging and Loopy Donuts</p></td>
-            <td><img src="image/LS.jpg" alt="LS" class="bio-img" style="text-align: center;"/><p>Kurt's bio goes here. He's just as crazy as this SSJ is for Loopy Donuts and Anime!</p></td>
-            <td><img src="image/CVW.jpg" alt="CVW" class="bio-img" /><p>Chris' bio goes here. He's a dev who went to an all-women's college.</p></td>
+            <td><img src="image/Ken.jpeg" alt="Ken" id="team" class="bio-img" /><p>Ken Liu - Co-founder, CEO, Lead Artist</p></td>
+            <td><img src="image/D1.jpeg" alt="D1" class="bio-img" /><p>Lynn Liu - Co-Founder, Artist</p></td>
+            <td><img src="image/D2.jpeg" alt="D2" class="bio-img" /><p>Jane Liu - Co-Founder, Artist</p></td>
+            <td><img src="image/GK.jpeg" alt="GK" class="bio-img" /><p>Elizabeth Nyland - Project Lead, Community Management</p></td>
+            <td><img src="image/LS.jpeg" alt="LS" class="bio-img" /><p>Kurt Linkhart - Project Lead, Marketing</p></td>
+            <td><img src="image/CVW.jpeg" alt="CVW" class="bio-img" /><p>Chris Van Wert - Developer</p></td>
           </tr>
         </thead>
         </table>
